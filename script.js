@@ -360,6 +360,72 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
+// PDF Download and Print functionality
+function downloadPDF() {
+    // Open the compact version in a new window for printing
+    const printWindow = window.open('portfolio-compact.html', '_blank');
+    if (printWindow) {
+        printWindow.onload = function() {
+            printWindow.print();
+        };
+    }
+}
+
+function downloadPDFDirect() {
+    // Create a link to download the compact version
+    const link = document.createElement('a');
+    link.href = 'portfolio-compact.html';
+    link.download = 'Game-Developer-Portfolio-Compact.pdf';
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+// Add debug buttons
+function addDebugButtons() {
+    const debugContainer = document.createElement('div');
+    debugContainer.style.cssText = `
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        z-index: 10000;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    `;
+    
+    const printBtn = document.createElement('button');
+    printBtn.textContent = 'Debug: Print PDF';
+    printBtn.style.cssText = `
+        padding: 8px 12px;
+        background: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    `;
+    printBtn.onclick = downloadPDF;
+    
+    const downloadBtn = document.createElement('button');
+    downloadBtn.textContent = 'Debug: Download PDF';
+    downloadBtn.style.cssText = `
+        padding: 8px 12px;
+        background: #4ecdc4;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 12px;
+    `;
+    downloadBtn.onclick = downloadPDFDirect;
+    
+    debugContainer.appendChild(printBtn);
+    debugContainer.appendChild(downloadBtn);
+    document.body.appendChild(debugContainer);
+}
+
 // Initialize all effects when page loads
 document.addEventListener('DOMContentLoaded', () => {
     createParticles();
@@ -367,4 +433,13 @@ document.addEventListener('DOMContentLoaded', () => {
     addGlitchEffect();
     addHolographicEffect();
     addScanLines();
+    
+    // Add PDF download functionality
+    const downloadPdfBtn = document.getElementById('downloadPdf');
+    if (downloadPdfBtn) {
+        downloadPdfBtn.addEventListener('click', downloadPDF);
+    }
+    
+    // Add debug buttons (only in development)
+    addDebugButtons();
 });

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer - Compact Portfolio</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            font-size: 10px;
+            color: #888;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 3px;
+        }
+        
+        .experience-item {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .company-name {
+            font-weight: bold;
+            font-size: 12px;
+            color: #333;
+        }
+        
+        .year {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .position {
+            font-size: 11px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .tasks {
+            font-size: 10px;
+            color: #666;
+            margin-left: 10px;
+        }
+        
+        .tasks li {
+            margin-bottom: 2px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .project-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            font-size: 11px;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+        
+        .project-desc {
+            font-size: 9px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .project-tech {
+            font-size: 8px;
+            color: #888;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .skill-category {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .skill-category h4 {
+            font-size: 11px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 5px;
+        }
+        
+        .skill-items {
+            font-size: 9px;
+            color: #666;
+        }
+        
+        .about-text {
+            font-size: 10px;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media print {
+            body {
+                font-size: 10px;
+            }
+            
+            .section {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Game Developer</div>
+        <div class="title">Technical Artist | Unreal Engine 5 & Unity Specialist</div>
+        <div class="contact">
+            gamedev@example.com | +1 (555) 123-4567 | Game Studio City, CA
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">About</div>
+        <div class="about-text">
+            Passionate game developer with over 5 years of experience creating immersive gaming experiences across multiple platforms. 
+            Specialize in Unreal Engine 5, Unity, and cutting-edge game technologies that bring virtual worlds to life. 
+            When not developing games, exploring new game engines, contributing to open-source game projects, or sharing knowledge with the game development community. 
+            Believe games are the ultimate form of interactive art.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Commercial Experience</div>
+        
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">SpaceSource</div>
+                <div class="year">2025</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Development of Game Logic</li>
+                <li>Optimizing materials</li>
+                <li>Optimizing lights</li>
+                <li>Optimizing Content</li>
+                <li>Optimizing Scalability</li>
+                <li>Implementing Materials</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Knucklebonz</div>
+                <div class="year">2023 - 2025</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Development of Character Creator</li>
+                <li>Optimizing materials</li>
+                <li>Optimizing lights</li>
+                <li>Development of UI Elements</li>
+                <li>Optimizing Content</li>
+                <li>Optimizing Scalability</li>
+                <li>Implementing Materials</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Cleave Damage</div>
+                <div class="year">2023</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Development of Game Logic</li>
+                <li>Multiplayer game logic development</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Storymode LLC</div>
+                <div class="year">2020 – 2022</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Material development</li>
+                <li>Development of animation logic</li>
+                <li>Game logic development</li>
+                <li>Technical game design</li>
+                <li>Balancing of game mechanics</li>
+                <li>Gameplay ability system development</li>
+                <li>Optimizing content for Nintendo Switch</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Rogue Arts</div>
+                <div class="year">2019 – 2020</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Development of UI elements</li>
+                <li>Game logic development</li>
+                <li>Development and implementation of quests and quest mechanics</li>
+                <li>VR development</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="company-header">
+                <div class="company-name">Octopus Games</div>
+                <div class="year">2018 – 2019</div>
+            </div>
+            <div class="position">Technical Artist</div>
+            <ul class="tasks">
+                <li>Game UI Development</li>
+                <li>Multiplayer game logic development</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Featured Projects</div>
+        <div class="projects-grid">
+            <div class="project-item">
+                <div class="project-title">Cyberpunk Arena</div>
+                <div class="project-desc">Immersive first-person shooter built in Unreal Engine 5, featuring advanced AI, dynamic lighting, and multiplayer combat.</div>
+                <div class="project-tech">Unreal Engine 5, C++, Blueprints, Multiplayer</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">Mystic Realms</div>
+                <div class="project-desc">Fantasy RPG adventure game developed in Unity, featuring spell-casting mechanics and procedurally generated dungeons.</div>
+                <div class="project-tech">Unity 3D, C#, Procedural Generation, RPG Systems</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">Nebula Explorer</div>
+                <div class="project-desc">Space exploration game with realistic physics simulation, featuring asteroid mining and intergalactic trading systems.</div>
+                <div class="project-tech">Unreal Engine 5, Physics Simulation, Procedural Worlds, VR Support</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills & Technologies</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Game Engines</h4>
+                <div class="skill-items">
+                    Unreal Engine 5, Unity 3D, Godot, CryEngine, GameMaker, Construct 3
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Programming</h4>
+                <div class="skill-items">
+                    C++, C#, Blueprints, Python, JavaScript, Lua
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools & Software</h4>
+                <div class="skill-items">
+                    Blender, Maya, Photoshop, Substance, Perforce, Git
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
