@@ -15,7 +15,7 @@
             <div class="nav-logo">
                 <a href="#home">VHeisik</a>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li class="nav-item">
                     <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -32,11 +32,11 @@
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
@@ -52,10 +52,7 @@
                     I craft immersive gaming experiences that push the boundaries of interactive entertainment. 
                     From AAA titles to indie gems, I bring worlds to life.
                 </p>
-                <div class="hero-buttons">
-                    <button id="downloadPdf" class="btn btn-primary">Download Compact Version</button>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+                
             </div>
             <div class="hero-image">
                 <div class="image-placeholder">
@@ -212,78 +209,57 @@
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-image steam">
                         <div class="image-placeholder">
-                            <i class="fas fa-rocket"></i>
+                            <i class="fab fa-steam"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Cyberpunk Arena</h3>
-                        <p>An immersive first-person shooter built in Unreal Engine 5, featuring advanced AI, dynamic lighting, and multiplayer combat in a futuristic cyberpunk world.</p>
-                        <div class="project-tech">
-                            <span>Unreal Engine 5</span>
-                            <span>C++</span>
-                            <span>Blueprints</span>
-                            <span>Multiplayer</span>
+                        <div class="project-header">
+                            <h3>Origament: A Paper Adventure</h3>
+                            <span class="company-badge">SpaceSource</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Play Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://store.steampowered.com/app/3448430/Origament_A_Paper_Adventure/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-image steam">
                         <div class="image-placeholder">
-                            <i class="fas fa-magic"></i>
+                            <i class="fab fa-steam"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Mystic Realms</h3>
-                        <p>A fantasy RPG adventure game developed in Unity, featuring spell-casting mechanics, character progression, and procedurally generated dungeons.</p>
-                        <div class="project-tech">
-                            <span>Unity 3D</span>
-                            <span>C#</span>
-                            <span>Procedural Generation</span>
-                            <span>RPG Systems</span>
+                        <div class="project-header">
+                            <h3>KnuckleBonz Metaverse Music Experience</h3>
+                            <span class="company-badge">KnuckleBonz</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Play Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://store.steampowered.com/app/3245650/KnuckleBonz_Metaverse_Music_Experience/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
+                    <div class="project-image youtube">
                         <div class="image-placeholder">
-                            <i class="fas fa-space-shuttle"></i>
+                            <i class="fab fa-youtube"></i>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Nebula Explorer</h3>
-                        <p>A space exploration game with realistic physics simulation, featuring asteroid mining, space station building, and intergalactic trading systems.</p>
-                        <div class="project-tech">
-                            <span>Unreal Engine 5</span>
-                            <span>Physics Simulation</span>
-                            <span>Procedural Worlds</span>
-                            <span>VR Support</span>
+                        <div class="project-header">
+                            <h3>Rogue wars</h3>
+                            <span class="company-badge">Rogue Arts</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Play Demo
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://www.youtube.com/watch?v=i1HnYHZz-h8" class="project-link" target="_blank" rel="noopener noreferrer">
+                                <i class="fas fa-external-link-alt"></i> View
                             </a>
                         </div>
                     </div>
@@ -303,15 +279,15 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>gamedev@example.com</span>
+                            <span>malbork2410@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
+                            <span>+995 599 15 36 57</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Game Studio City, CA</span>
+                            <span>Batumi, Georgia (Remote)</span>
                         </div>
                     </div>
                     <div class="social-links">
@@ -339,6 +315,10 @@
             <p>&copy; 2024 Game Developer. All rights reserved. | Crafted with passion for gaming</p>
         </div>
     </footer>
+
+    <a class="floating-compact" href="portfolio-compact.html" target="_blank" rel="noopener noreferrer" title="Open compact version">
+        Compact version
+    </a>
 
     <script src="script.js"></script>
 </body>
