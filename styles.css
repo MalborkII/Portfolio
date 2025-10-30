@@ -408,6 +408,7 @@ body::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 35%;
     border-radius: 50%;
     position: relative;
     z-index: 1;
