@@ -1194,6 +1194,16 @@ section {
     .section-title {
         font-size: 2rem;
     }
+
+    /* Pin Compact button near header on mobile */
+    .floating-compact {
+        top: 72px; /* below navbar */
+        right: 12px;
+        bottom: auto;
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
